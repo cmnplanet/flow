@@ -58,9 +58,8 @@ let film = {
 4. Add a property "boxoffice" with a value of 269061 to the "film" object. Return "film".
 */
 function addBoxOffice(){
-  // var film [];
-  // boxoffice = 269061;
-  // return film;
+    film.boxoffice=269061;
+    return film;
 }
 
 // need to a property to an the film object
@@ -69,19 +68,17 @@ function addBoxOffice(){
 5. Add the name "Yukiko Shimazaki" to the "actors" array. Return "film";
 */
 function addActor(){
-    // Your answer here:
+  film.actors.push("Yukiko Shimazaki");
+  return film;  // Your answer here:
 }
 
 /*
 6. Now that you've added a "boxoffice" property, subtract "budget" from "property" and return the difference. This number is the amount lost by the studio in making the film. Return the loss.
 */
 function getLosses(){
-    // Your answer here:
+  let getLosses=(film.boxoffice - film.budget);
+  return getLosses;
 }
-
-
-
-
 
 
 /*
@@ -95,8 +92,17 @@ let letterVals = [ "v", "x", "r", "f", "p" ];
 
 function interleave(){
     let vals = [];
-    // Your answer here:
+for (i = 0; i < numberVals.length; i++) {
+
 }
+
+for (i = 0; i < letterVals.length; i++) {
+
+}
+
+        return vals;
+      }
+
 
 
 
@@ -112,9 +118,15 @@ let second = [ "think", "stand", "cheese", "break", "numinous", "mouse", "close"
 
 function union(){
     let same = [];
-    // Your answer here:
-    // for (i = 0 ; i = first.length ; i ++) {
-    //   for (j = 0 ; j = second.length ; j ++) {
-    //     same.push ( [i] [j]);
-    //     return same;
+
+for (i=0;i<first.length;i++) {
+  for (j=0;j<second.length;j++) {
+    if (first[i] === second[j]){
+      let item= first[i];
+      same.push(item);
+    }
+    //just have to push one since same?
+  }
+}
+return same;
 }
